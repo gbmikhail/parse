@@ -1,5 +1,9 @@
+# 1) Написать программу, которая собирает входящие письма из своего или тестового почтового ящика
+# и сложить данные о письмах в базу данных (от кого, дата отправки, тема письма, текст письма полный)
+# Логин тестового ящика:
+# Пароль тестового ящика:
+
 import time
-from pprint import pprint
 
 from pymongo import MongoClient
 from selenium import webdriver
@@ -10,8 +14,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 
-LOGIN = '0'          # Example: example@mail.ru
-PASSWD = '0'         # Example: qwerty
+LOGIN = ''          # Example: example@mail.ru
+PASSWD = ''         # Example: qwerty
 
 assert LOGIN and PASSWD, 'Логин и пароль должны быть заполнены'
 
